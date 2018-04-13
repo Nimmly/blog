@@ -22,6 +22,7 @@
     @include('partials.navbar')
 
     @include('partials.header')
+   
 
     <div class="container">
 

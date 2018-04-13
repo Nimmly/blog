@@ -1,6 +1,11 @@
 <div class="blog-header">
       <div class="container">
         <h1 class="blog-title">The Bootstrap Blog</h1>
+        @if($message = session('message'))
+        <div class="alert alert-success">
+          {{ $message }}
+        </div>
+        @endif
         @if(Auth()->check())
         <div>{{ Auth()->user()->name }}</div>
         <a href ='/logout'>logout</a>

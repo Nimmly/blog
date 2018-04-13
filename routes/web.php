@@ -21,6 +21,7 @@ Route::get('/posts/create', 'PostsController@create')->name('create-post');
 Route::get('/posts/{id}', 'PostsController@show')->name('single-post');
 Route::post('/posts','PostsController@store');
 Route::post('/posts/{post_id}/comments', 'CommentsController@store')->name('comments-post');
+Route::get('/posts/tag/{tag}', 'TagsController@index')->name('posts-tags');
 Route::get('/register', 'RegisterController@create');
 Route::post('/register', 'RegisterController@store');
 Route::get('/logout', 'LoginController@logout');
