@@ -20,9 +20,9 @@
     {{ csrf_field() }}
         <div class="form-group">
 
-            <label for="title">Molimo unesite comentar</label>
-            <input id = "title" type= "text" name="title" class= "form-control">
-            @include('partials.error-message', ['fieldTitle' => 'title'])
+            <label for="text">Molimo unesite comentar</label>
+            <input id = "text" type= "text" name="text" class= "form-control">
+            @include('partials.error-message', ['fieldTitle' => 'text'])
         </div>
 
 
