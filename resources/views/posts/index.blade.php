@@ -20,6 +20,8 @@ Blog
         @endforeach
    </ul>
 
+   
+
    <nav class="blog-pagination">
             <a class="btn btn-outline-primary{{ $posts->currentPage() == 1 ? 'secondary disabled' : 'primary' }}" 
             href="{{ $posts->previousPageUrl() }}">Prev</a>
