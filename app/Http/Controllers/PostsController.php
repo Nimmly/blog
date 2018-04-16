@@ -12,7 +12,8 @@ class PostsController extends Controller
     }
     public function index()
     {
-        $posts = Post::getPublished();
+        //$posts = Post::getPublished();
+        $posts = Post::where('is_published',true)->paginate(10);
         return view('posts.index',compact(['posts']));
     }
 

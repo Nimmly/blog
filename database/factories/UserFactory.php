@@ -26,7 +26,7 @@ $factory->define(App\Post::class, function (Faker $faker){
     return [
         'title' => $faker->sentence(1, true),
         'body' => $faker->text(200),
-        'is_published' => false
+        
     ];
 });
 
